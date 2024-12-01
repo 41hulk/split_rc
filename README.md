@@ -1,9 +1,9 @@
-Here's a comprehensive guide for the SplitFn application:
 
-# SplitFn - Bill Splitting Application
+
+# Split - Bill Splitting Application
 
 ## Business Overview
-SplitFn is a web application that helps users manage and split expenses with friends and family. Key features include:
+Split is a web application that helps users manage and split expenses with friends and family. Key features include:
 - User authentication (signup/login)
 - Group expense management
 - Bill splitting functionality
