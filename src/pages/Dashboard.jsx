@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchUser = async (token) => {
     try {
-      const response = await fetch("http://localhost:5173/api/user", {
+      const response = await fetch("http://localhost:5030/api/user", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (credentials) => {
     try {
-      const response = await fetch("http://localhost:5173/api/login", {
+      const response = await fetch("http://localhost:5030/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

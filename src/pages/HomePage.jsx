@@ -7,8 +7,10 @@ function HomePage() {
   return (
     <div className="home">
       <header className="home-header">
-        <h1>SplitFn</h1>
-        <p className="tagline">Split bills effortlessly with friends and family</p>
+        <h1>Split Bill </h1>
+        <p className="tagline">
+          Split bills effortlessly with friends and family
+        </p>
         <button className="cta-button" onClick={() => navigate("/auth")}>
           Get Started
         </button>
@@ -85,7 +87,9 @@ function HomePage() {
 
         <section className="cta-section">
           <h2>Ready to get started?</h2>
-          <p>Join millions of users who trust SplitFn for their expense sharing</p>
+          <p>
+            Join millions of users who trust SplitFn for their expense sharing
+          </p>
           <button className="cta-button" onClick={() => navigate("/auth")}>
             Create Free Account
           </button>

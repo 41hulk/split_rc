@@ -26,14 +26,14 @@ header {
 }
 
 header h1 {
-  color: var(--primary-green);
+  color: var(--primary-gray);
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: -1px;
 }
 
 .tagline {
-  color: var(--text-gray);
+  color: var(--text-dark);
   font-size: 1.2rem;
   font-weight: 300;
 }

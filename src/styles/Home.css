@@ -218,26 +218,188 @@
   opacity: 0.5;
 }
 
+/* Responsive Design */
+@media (min-width: 1441px) {
+  .home {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .hero-section,
+  .features-grid,
+  .steps-container {
+    max-width: 1400px;
+  }
+
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-section,
+  .features-section,
+  .how-it-works,
+  .cta-section {
+    padding: 5rem 2rem;
+  }
+
+  .features-grid,
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #root {
+    padding: 0;
+  }
+
+  .home-header {
+    padding: 3rem 1.5rem 5rem;
+  }
+
+  .home-header h1 {
+    font-size: 3rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .stat-card h3 {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .home-header {
+    padding: 2.5rem 1rem 4rem;
+  }
+
   .home-header h1 {
     font-size: 2.5rem;
   }
 
   .tagline {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin: 0 auto 2rem;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .hero-content h2 {
     font-size: 2rem;
   }
 
-  .features-section,
-  .how-it-works,
-  .cta-section {
-    padding: 4rem 1.5rem;
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+
+  .features-grid,
+  .steps-container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .feature-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-header h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+  }
+
+  .step-number {
+    width: 35px;
+    height: 35px;
+  }
+
+  .cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto 2rem;
+  }
+}
+
+/* Fix for very small screens */
+@media (max-width: 360px) {
+  .home-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.4rem;
   }
 
   .stat-card h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .feature-card,
+  .step {
+    padding: 1.2rem;
+  }
+}
+
+/* Landscape mode */
+@media (max-height: 480px) and (orientation: landscape) {
+  .home-header {
+    padding: 1.5rem 1rem;
+    clip-path: none;
+  }
+
+  .hero-section,
+  .features-section,
+  .how-it-works,
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 } 
